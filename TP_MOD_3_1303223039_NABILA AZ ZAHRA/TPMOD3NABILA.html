@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Profil Pribadi</title>
+    <!-- Tag <title> digunakan untuk memberikan judul halaman yang akan ditampilkan di tab browser -->
+</head>
+
+<body>
+    <!-- Tag <body> digunakan untuk menampilkan konten utama halaman di browser -->
+
+    <h1>Profil Pribadi Nabila Az Zahra_1303223039_IT4602</h1>
+    <!-- Tag <h1> digunakan untuk membuat judul utama dengan ukuran font paling besar, untuk heading halaman utama -->
+    
+    <div>
+        <!-- Tag <div> digunakan sebagai container untuk mengelompokkan elemen-elemen di dalamnya -->
+        
+        <table>
+            <!-- Tag <table> digunakan untuk membuat tabel yang menampilkan data dalam bentuk baris dan kolom -->
+            
+            <tr>
+                <!-- Tag <tr> digunakan untuk membuat satu baris di dalam tabel -->
+                <th>Foto Profil</th>
+                <!-- Tag <th> digunakan untuk mendefinisikan header kolom pada tabel, yang biasanya menonjol dengan format tebal -->
+                <th>Video Perkenalan</th>
+                <!-- Header kolom kedua untuk menampilkan video perkenalan -->
+            </tr>
+            
+            <tr>
+                <!-- Baris kedua tabel yang berisi konten gambar dan video -->
+                
+                <td><img src="nab.jpg" alt="Foto Profil" align="left" width="175" height="175"></td>
+                <!-- Tag <img> digunakan untuk menampilkan gambar. "src" berisi lokasi gambar, "alt" menyediakan teks alternatif jika gambar gagal ditampilkan -->
+                
+                <td>
+                    <video controls height="200" align="center">
+                        <!-- Tag <video> digunakan untuk menyematkan video. "controls" menampilkan kontrol seperti play dan pause -->
+                        
+                        <source src="nabvid.mp4" type="video/mp4">
+                        <!-- Tag <source> menunjukkan sumber file video dan formatnya -->
+                    </video>
+                </td>
+            </tr>
+        </table>
+    </div>    
+
+    <h2>Tentang Saya</h2>
+    <!-- Tag <h2> digunakan untuk membuat subjudul, biasanya digunakan untuk bagian-bagian di bawah <h1> -->
+    
+    <p>Halo! Nama saya Nabila Az Zahra dari kelas IT-46-02 dengan NIM 1303223039. Saya adalah seorang Mahasiswi S1 Teknologi Informasi yang sedang mempelajari Pemrograman Web.</p>
+    <!-- Tag <p> digunakan untuk membuat paragraf teks -->
+    
+    <div class="keterampilan">
+        <!-- Tag <div> dengan class "keterampilan" digunakan untuk mengelompokkan bagian keterampilan -->
+        
+        <h2>Keterampilan</h2>
+        <!-- Subjudul untuk bagian keterampilan -->
+        
+        <table>
+            <!-- Tabel yang menampilkan daftar keterampilan dan tingkatannya -->
+            
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+                <!-- Header untuk kolom keterampilan dan tingkat keterampilan -->
+            </tr>
+            
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Pemula</td>
+                <!-- Baris data untuk keterampilan HTML/CSS -->
+            </tr>
+            
+            <tr>
+                <td>Java</td>
+                <td>Pemula</td>
+                <!-- Baris data untuk keterampilan Java -->
+            </tr>
+            
+            <tr>
+                <td>Golang</td>
+                <td>Menengah</td>
+                <!-- Baris data untuk keterampilan Golang -->
+            </tr>
+            
+            <tr>
+                <td>Python</td>
+                <td>Pemula</td>
+                <!-- Baris data untuk keterampilan Python -->
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-section">
+        <!-- Tag <div> dengan class "form-section" digunakan untuk membungkus bagian form kontak -->
+        
+        <h2>Hubungi Saya</h2>
+        <!-- Subjudul untuk bagian form kontak -->
+        
+        <form action="/submit" method="post">
+            <!-- Tag <form> digunakan untuk mengirimkan data ke server. "action" menentukan URL tujuan pengiriman data dan "method" menentukan metode pengiriman (POST) -->
+            
+            <div>
+                <label for="name">Nama:</label>
+                <!-- Tag <label> mengikat input dengan id "name", memberikan konteks untuk kolom input -->
+                
+                <input type="text" id="name" name="name" required>
+                <!-- Tag <input> untuk menerima input teks, dengan atribut "required" untuk membuat input wajib diisi -->
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <!-- Input untuk email dengan validasi tipe email dan atribut required -->
+            </div>
+
+            <div>
+                <label for="message">Pesan:</label>
+                <div>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <!-- Tag <textarea> untuk input pesan yang panjang, dengan atribut rows dan cols untuk mengatur ukuran kotak input -->
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Kirim Pesan</button>
+                <!-- Tombol untuk mengirimkan form -->
+            </div>                
+        </form>
+    </div>
+
+    <div class="social-links">
+        <!-- Tag <div> digunakan untuk membungkus bagian tautan media sosial -->
+        
+        <h2>Media Sosial:</h2>
+        <!-- Subjudul untuk bagian media sosial -->
+
+        <a href="https://www.linkedin.com/in/naabilaaaz17/" target="_blank">LinkedIn</a> |        
+        <a href="https://github.com/naabilaaaz17/WEBPRO.git" target="_blank">GitHub</a> |
+        <a href="https://www.instagram.com/naabilaaaz/" target="_blank">Instagram</a>
+        <!-- Tag <a> digunakan untuk membuat hyperlink, atribut "href" menunjukkan URL, dan "target='_blank'" membuka tautan di tab baru -->
+
+    </div>
+</body>
+</html>
